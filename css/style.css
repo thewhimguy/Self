@@ -1,6 +1,6 @@
 body{
-font-family:Segoe UI, sans-serif;
-color:#333;
+font-family:Segoe UI,sans-serif;
+margin:0;
 }
 
 .navbar{
@@ -37,24 +37,19 @@ margin-bottom:40px;
 
 .marquee-section{
 background:#f8f9fa;
+overflow:hidden;
 padding:40px 0;
-overflow:hidden;
 }
 
-.marquee{
-display:flex;
-overflow:hidden;
-}
-
-.marquee-content{
+.marquee-track{
 display:flex;
 gap:40px;
 animation:scroll 30s linear infinite;
 }
 
 .marquee-item{
-min-width:220px;
 text-align:center;
+min-width:220px;
 }
 
 .marquee-item img{
@@ -62,37 +57,28 @@ width:200px;
 height:130px;
 object-fit:cover;
 border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-}
-
-.marquee-item span{
-display:block;
-margin-top:10px;
-font-weight:600;
 }
 
 @keyframes scroll{
-
 0%{transform:translateX(0);}
 100%{transform:translateX(-50%);}
-
 }
 
 /* services */
 
 .service-card{
-padding:35px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:.3s;
 text-align:center;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
 }
 
 .service-card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
-.service-icon{
+.service-card i{
 font-size:40px;
 color:#0b2d4d;
 margin-bottom:10px;
@@ -101,8 +87,8 @@ margin-bottom:10px;
 /* about */
 
 .about{
-padding:80px 0;
 background:#f5f5f5;
+padding:80px 0;
 }
 
 /* stats */
@@ -118,15 +104,55 @@ font-size:40px;
 font-weight:700;
 }
 
-/* contact */
+/* modern contact */
 
-.contact{
-padding:80px 0;
-background:#fafafa;
+.contact-modern{
+background:linear-gradient(135deg,#111,#1c1c1c);
+color:white;
+padding:100px 0;
+}
+
+.contact-header h2{
+font-size:42px;
+font-weight:700;
+}
+
+.contact-header p{
+color:#bbb;
+margin-bottom:60px;
+}
+
+.contact-card{
+background:rgba(255,255,255,0.05);
+border-radius:16px;
+padding:40px;
+text-align:center;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+transition:.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+}
+
+.contact-card i{
+font-size:40px;
+color:#2f80ff;
+margin-bottom:15px;
 }
 
 footer{
 background:#0b2d4d;
 color:white;
-padding:20px;
+padding:40px 0;
+}
+
+footer ul{
+list-style:none;
+padding:0;
+}
+
+footer li{
+margin-bottom:8px;
 }
