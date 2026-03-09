@@ -1,13 +1,20 @@
 body{
-font-family:'Poppins',sans-serif;
+font-family:Arial, sans-serif;
+}
+
+.topbar{
+background:#0b3d6d;
+color:white;
+padding:6px 0;
+font-size:14px;
 }
 
 .navbar{
-background:#0b3d6d;
+background:#06223d;
 }
 
 .hero{
-height:90vh;
+height:85vh;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab');
 background-size:cover;
@@ -16,46 +23,45 @@ display:flex;
 align-items:center;
 }
 
-.section-title{
-font-weight:600;
-margin-bottom:30px;
-}
-
 .services{
-background:#f8f9fa;
+background:#f5f7fa;
 }
 
-.service-box{
-background:#fff;
-padding:25px;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+.service-card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
-.service-box:hover{
-transform:translateY(-6px);
+.service-card i{
+font-size:40px;
+color:#0b3d6d;
+margin-bottom:15px;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.why{
+background:#0b3d6d;
+color:white;
+}
+
+.cta{
+background:#1b4f9c;
+padding:60px 0;
 }
 
 .contact{
-background:#0b3d6d;
+background:#f7f7f7;
 }
 
 footer{
-background:#06223d;
-color:#fff;
-text-align:center;
+background:#041426;
+color:white;
 padding:20px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:12px 18px;
-border-radius:30px;
-text-decoration:none;
-font-weight:500;
 }
