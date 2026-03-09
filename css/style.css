@@ -11,3 +11,53 @@ box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;}
 .service-card i{font-size:40px;color:#0b3d6d;margin-bottom:10px;}
 .service-card:hover{transform:translateY(-10px);}
 footer{background:#041426;color:white;padding:30px;}
+.marquee-section{
+background:#f8f9fa;
+padding:40px 0;
+overflow:hidden;
+}
+
+.marquee{
+display:flex;
+width:100%;
+overflow:hidden;
+}
+
+.marquee-content{
+display:flex;
+gap:40px;
+animation:scroll 25s linear infinite;
+}
+
+.marquee-item{
+display:flex;
+flex-direction:column;
+align-items:center;
+min-width:200px;
+}
+
+.marquee-item img{
+width:180px;
+height:120px;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.marquee-item span{
+margin-top:10px;
+font-weight:600;
+color:#0b2d4d;
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
