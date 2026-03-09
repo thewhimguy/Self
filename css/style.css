@@ -1,0 +1,13 @@
+
+body{font-family:Arial, sans-serif;}
+.topbar{background:#0b3d6d;color:white;padding:6px;font-size:14px;}
+.navbar{background:#06223d;}
+.hero{background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab');
+background-size:cover;height:80vh;display:flex;align-items:center;}
+.services{background:#f5f7fa;}
+.service-card{background:white;padding:30px;border-radius:10px;text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;}
+.service-card i{font-size:40px;color:#0b3d6d;margin-bottom:10px;}
+.service-card:hover{transform:translateY(-10px);}
+footer{background:#041426;color:white;padding:30px;}
